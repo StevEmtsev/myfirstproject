@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+body{
+    margin: 0;
+
+}
+input {
+    all: unset;
+  }
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.open{
+    display: flex !important;
+}
+
+li{
+    list-style-type:none;
+}
+
+a{
+    text-decoration: none;
+}
+.main {
+  background-image: url('/Practika_2/img/photo/unsplash_rlwE8f8anOc.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  min-height: 660px;
+  position: relative;
+  
+}
+
+.main::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 10;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    background: linear-gradient(0deg, rgba(0, 52, 101, 0.72), rgba(0, 0, 0, 0) 40%);
+}
+.header {
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.header__block {
+    
+    background-color: #fff;
+    border-radius: 18px;
+}
+.header__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__items a:last-child{
+    padding-right: 49px;
+}
+
+.header__items a:first-child{
+    padding-left: 49px;
+}
+.header_link {
+    display: block;
+    color: #262626;
+    font-weight: 400;
+    font-size: 24px;
+    transition: .4s all;
+}
+
+.header_link:hover{
+    color: #65AEF2;
+}
+
+.header_logo {
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+.header_logo-adaptiv{
+    display: none;
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+.header_link:hover{
+    color: #65AEF2;
+}
+.burger {
+    position: relative;
+    display: none;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    z-index: 50;
+}
+
+.burger span{
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+}
+
+.burger::after{
+    content:'';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    bottom: 0;
+    
+}
+
+.burger::before{
+    content:'';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    top: 0;
+}
+
+.burger.active span{
+    display: none;
+}
+
+.burger.active::after{
+    transform: rotate(-45deg) translateX(11px);
+}
+
+.burger.active::before{
+    transform: rotate(45deg) translateX(11px);
+}
+
+
+.main__title{
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.4;
+    margin-top: 250px;
+    font-weight: 900;
+    font-size: 64px;
+    color: #fff;
+    max-width: 735px;
+    z-index: 3;
+    position: absolute;
+}
+
+.main__decoration {
+    margin: 0 auto;
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 3;
+    left: 47%;
+}
+.main__cir {
+    margin-top: 500px;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.main__cir.active{
+    background-color: #65AEF2;
+}
+
+/*main----------------------------------------------------------------------------*/
+
+
+.book {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.book__block {
+    
+    margin-top: 80px;
+    background-color: #E9F3F6;
+    border-radius: 42px;
+    margin-bottom: 80px;
+
+}
+.book__title {
+    padding-top: 36px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+.book__subtitle {
+    margin-top: 12px;
+    text-align: center;
+    color: #5E5E5E;
+    font-size: 16px;
+    font-weight: 600;
+}
+.book__form {
+    padding-top: 60px;
+    padding-bottom: 65px;
+    max-width: 1055px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book__date {
+    font-size: 16px;
+    font-weight: 900;
+}
+.book__panel-data {
+    border-radius: 12px;
+    padding: 18px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.book__panel-data span{
+    margin-left: 20px;
+}
+.book__text {
+    color: #1E1E1E;
+    font-size: 16px;
+    font-weight: 900;
+}
+.book__person {
+    width: 433px;
+}
+.book__person-text {
+    font-size: 16px;
+    font-weight: 900;
+    
+}
+.book__panel-person {
+    border-radius: 12px;
+    padding: 18px;
+    background-color: #fff;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book__people {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.book__col-people {
+    max-width: 20px;
+    border: none;
+    text-align: center;
+}
+.button__arrow {
+    cursor: pointer;
+}
+.buttons__arow{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.button__arrow-up{
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.book__arrow{
+    max-width: 20px;
+}
+.book__children {
+    margin-left: 44px;
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.book__button {
+    margin-top: 28px;
+    
+}
+
+.book__button a{
+    border-radius: 12px;
+    color: #fff;
+    padding: 15px 32px;
+    background-color: #65AEF2;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: .4s all;
+}
+
+.book__button a:hover{
+    background-color: #218cf0;
+}
+/*----------------book--------------------------------*/
+
+
+.galery {
+    background-color: #F3F3F3;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 80px;
+}
+
+.galery__grid {
+    display: grid;
+    justify-content: center;
+    gap: 40px;
+    grid-template-columns: repeat(3,400px);
+    grid-template-rows: repeat(2,360px);
+    grid-template-areas: 
+        "sal product-1 product-3" 
+        "sal product-2 product-4" 
+    ;
+}
+.galery__sal {
+    text-align: center;
+    grid-area: sal;
+    background-image: url('/Practika_2/img/photo/long.png');
+    background-repeat: no-repeat;
+    border-radius: 42px;
+    
+}
+
+.galery-photo{
+    text-align: center;
+    border-radius: 42px;
+    position: relative;
+}
+
+.galery-photo span{
+    position: absolute;
+    top: 75%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.galery__product-1{
+    background-image: url('/Practika_2/img/photo/dining.png');
+}
+
+.galery__product-2{
+    background-image: url('/Practika_2/img/photo/Service\ &\ Facilities.png');
+}
+
+.galery__product-3{
+    background-image: url('/Practika_2/img/photo/Conferences\ &\ Meetings.png');
+}
+.galery__product-4{
+    background-image: url('/Practika_2/img/photo/Wedding\ Package.png');
+}
+
+/*-----------galery--------------------------*/
+
+
+.info {
+    margin-bottom: 80px;
+}
+
+.info__block {
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info__apptitle {
+    margin-bottom: 22px;
+    color: #65AEF2;
+    font-size: 32px;
+    font-weight: 600;
+}
+.info__title {
+    margin-bottom: 44px;
+    font-size: 64px;
+    font-weight: 600;
+}
+.info__subtitle {
+    max-width: 750px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #1E1E1E;
+}
+.info__link a {
+    color: #65AEF2;
+    font-size: 32px;
+    font-weight: 900;
+    transition: .4s all;
+}
+
+.info__link a:hover{
+    color: #218cf0;
+}
+/*-----------info--------------------------*/
+
+.cards {
+    margin-bottom: 80px;
+}
+
+.cards__section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards__block {
+    width: 400px;
+    height: 550px;
+    border-radius: 42px;
+    box-shadow: 0px 8px 20px 1px rgba(87, 87, 87, 0.5);
+    margin-bottom: 30px;
+}
+.cards__items{
+    margin: 0 auto;
+    width: 360px;
+}
+.cards__photo img{
+    width: 360px;
+    height: 280px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+.cards__apptitle {
+    color: #5E5E5E;
+    font-size: 12px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.cards__title{
+    display: flex;
+    justify-content: space-between;
+}
+.cards__icon span{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cards__icon img{
+    width: 13px;
+}
+.cards__title span:first-child{
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 22px;
+}
+.cards__subtitle {
+    color: #5E5E5E;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+.cards__sale {
+    text-align: center;
+}
+.sale {
+    font-size: 36px;
+    font-weight: 900;
+}
+.time {
+    color: #1E1E1E;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*-----------cards--------------------------*/
+
+.footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #1E1E1E;
+    padding-top: 60px;
+    padding-bottom: 26px;
+}
+
+.footer__block {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 145px;
+}
+
+.footer__title {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.footer__enter{
+    display: flex;
+    align-items: center;
+}
+.footer__email {
+    background-color: #fff;
+    border: none;
+    padding: 0;
+    min-width: 490px;
+    min-height: 80px;
+    border-radius: 18px 0 0 18px;
+    padding-left: 30px;
+}
+
+.footer__button {
+    display: inline-block;
+    background-color: #65AEF2;
+    border-radius: 0 18px 18px 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+    margin: 0;
+    padding: 25.5px 25px;
+    transition: .4s all;
+}
+
+.footer__button:hover{
+    background-color: #218cf0;
+}
+
+.footer__main {
+    min-width: 500px;
+}
+.footer__logo {
+    text-align: center;
+    margin-bottom: 68px;
+}
+.footer__nav {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__nav a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    transition: .4s all;
+}
+
+.footer__nav a:hover{
+    color: #65AEF2;
+}
+
+.footer__nav li{
+    margin-bottom: 15px;
+}
+.footer__one {
+    flex-direction: column;
+}
+
+.footer__two {
+    flex-direction: column;
+}
+
+.footer__tree {
+    flex-direction: column;
+}
+
+.footer__footer {
+    max-width: 385px;
+    border-top: solid 1px #FFFFFF;
+   
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 25px;
+}

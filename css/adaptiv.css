@@ -1,0 +1,209 @@
+@media (max-width: 1400px){
+
+    .galery__grid{
+
+        grid-template-columns: repeat(2,400px);
+        grid-template-rows: repeat(3,360px);
+        grid-template-areas: 
+            "sal product-1"
+            "sal product-2"
+            "product-4 product-3"
+        ;
+    }
+    
+}
+
+@media (max-width: 1250px){
+    .cards__section{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer__block{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .footer__input{
+        margin-bottom: 40px;
+    }
+}
+
+
+@media (max-width: 920px){
+    .book__panel-data {
+        padding: 10px 32px;
+    }
+    .book__panel-person{
+        padding: 10px;
+    }
+    .book__person{
+        width: 300px;
+    }
+
+    .book__button a{
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .book__form{
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 900px){
+
+    .main{
+        padding-top: 25px;
+    }
+
+    .header__block{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .header__block:last-child{
+        padding-right: 49px;
+    }
+
+    .header__block:first-child{
+        padding-left: 49px;
+    }
+    
+    .header__items {
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 50;
+        overflow-y: auto;
+        background-color: #fff;
+
+    }
+
+    .header__items a:last-child{
+        padding-right: 0px;
+    }
+    
+    .header__items a:first-child{
+        padding-left: 0px;
+    }
+
+    .header__items img{
+        display: none;
+    }
+    
+    .header_link{
+        color: #000;
+        margin-bottom: 40px;
+    }
+
+   
+    
+
+    .header__items a:first-child{
+        display: flex;
+    }
+    .header_logo-adaptiv{
+        display: flex;
+    }
+
+    .burger{
+        display: flex;
+    }
+
+  .galery__grid{
+    grid-template-columns: repeat(1,320px);
+    grid-template-rows: repeat(5,320px);
+    grid-template-areas: 
+        "sal" 
+        "product-1" 
+        "product-2"
+        "product-3"
+        "product-4"   
+    ;
+  }
+
+  .info__apptitle {
+    font-size: 24px;
+}
+.info__title {
+    font-size: 48px;
+}
+.info__subtitle {
+    max-width: 500px;
+    font-size: 18px;
+}
+.info__link a {
+    font-size: 24px;
+}
+}
+
+
+@media (max-width: 700px){
+    .main__title{
+        font-size: 48px;
+        line-height: 1.2;
+    }
+
+    .book__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .book__panel-data{
+        margin-bottom: 40px;
+    }
+
+    .book__person{
+        width: 300px;
+        margin-bottom: 40px;
+    }
+
+    .info__block {
+       flex-direction: column;
+    }
+
+    .info__subtitle{
+        margin-bottom: 30px;
+    }
+
+    .footer__title{
+        font-size: 28px;
+    }
+    .footer__email{
+        min-width: 200px;
+    }
+    .footer__button{
+        padding: 25.5px 16px;
+    }
+    .footer__main {
+        min-width: 340px;
+    }
+}
+
+@media (max-width: 500px){
+    .main__title{
+        margin-top: 200px;
+    }
+
+    .cards__block {
+        width: 360px;
+        height: 550px;
+    }
+
+    .cards__items{
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .cards__photo img{
+        width: 300px;
+    }
+}
